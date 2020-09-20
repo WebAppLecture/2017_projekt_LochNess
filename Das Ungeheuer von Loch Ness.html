@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Das Ungeheuer von Loch Ness</title>
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- jquery einbinden -->
+</head>
+<body>
+    <div id="startScreen">
+        <h1 id="startHeading">Das Ungeheuer von Loch Ness</h1>
+        <p>
+            <b>Spielfeldgröße (10-30):</b>
+            <input type="number" class="numberInput" id="inputSpielfeldHoehe" min="10" max="30" step="1" value="20" > x <span id="spanInputSpielfeldBreite" ></span> <br>
+        </p>
+        <p>
+            <b>Geschwindigkeit:</b>
+            langsam<input type="range" class="rangeInput" id="inputGeschwindigkeit" min="50" max="150" value="100" >schnell <br>
+        </p>
+        <p>
+            <b>Schwierigkeit:</b>
+            leicht<input type="range" class="rangeInput" id="inputSchwierigkeit" min="0" max="8" value="2" >schwer <br>
+        </p>
+        <button id="bStart" >Spiel starten!</button>
+        <audio id="aud1" loop>
+            <source src="audio/Intro.mp3" type="audio/mpeg">
+            Ihr Browser unterstützt noch kein HTML5 Audio.
+        </audio>
+    </div>
+    <div id="gameScreen">
+        <canvas id="canvas" width="900" height="600">Dieser Browser unterstützt HTML5 Canvas nicht.</canvas>
+        <audio id="aud2" loop>
+            <source src="audio/Game.mp3" type="audio/mpeg">
+            Ihr Browser unterstützt noch kein HTML5 Audio.
+        </audio>
+    </div>
+    <div id="endScreen">
+        <h1 id = "endHeading">Game over</h1>
+        <p>Erreichte Länge: </p>
+        <span id="spErg"></span> <br>
+        <button id="bNeustart" >Neustart</button>
+        <audio id="aud3" loop>
+            <source src="audio/Gameover.mp3" type="audio/mpeg">
+            Ihr Browser unterstützt noch kein HTML5 Audio.
+        </audio>
+    </div>
+    <script src="javascript/classes.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background-color: #e2e2e2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 25pt;
+    text-align: center;
+}
+div
+{
+    background-color: #6b2700;
+    position: absolute;
+    left: 50%;
+    width: 1000px;
+    height: 700px;
+    margin:  0 0 0 -501px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px #666;
+}
+#startScreen
+{
+    color: #ffffff;
+    text-shadow: 0 0 5px black;
+    background-image: url("../graphics/Heller.jpg");
+    background-size: 50%;
+
+}
+#startHeading
+{
+    margin-bottom: 110px;
+    color: #2dff50;
+    font-size: 50pt;
+}
+canvas
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 900px;
+    height: 600px;
+    border: 1px solid black;
+    margin: -301px 0 0 -451px;
+    padding: 0;
+    background-color: #b8c4ff;
+}
+
+.numberInput
+{
+    height: 30px;
+    width: 50px;
+    font-size: 15pt;
+}
+
+button
+{
+    border-radius: 25px;
+    background: #1c0e31;
+    height: 50px;
+    border: 1px solid #666666;
+    color: #FFF;
+    font-size: 20pt;
+    margin-top: 50px;
+}
+#endScreen
+{
+    font-size: 30pt;
+    background-color: #e6fcff;
+    background-image: url("../graphics/snakeDead.png");
+}
+#endHeading
+{
+    color: #ff0000;
+}
