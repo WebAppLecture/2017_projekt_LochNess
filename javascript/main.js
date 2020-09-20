@@ -30,13 +30,13 @@
     imageOzean.src = "./graphics/ozean2.jpg";
     imageSchiff1 = document.createElement('img');
     imageSchiff1.onload = function() {};
-    imageSchiff1.src = "./graphics/schiff1.png";
+    imageSchiff1.src = "./graphics/Schiff1.png";
     imageSchiff2 = document.createElement('img');
     imageSchiff2.onload = function() {};
     imageSchiff2.src = "./graphics/schiff2.png";
     imageSchiff3 = document.createElement('img');
     imageSchiff3.onload = function() {};
-    imageSchiff3.src = "./graphics/schiff3.png";
+    imageSchiff3.src = "./graphics/Schiff3.png";
     imageReverse = document.createElement('img');
     imageReverse.onload = function() {};
     imageReverse.src = "./graphics/reverse.png";
